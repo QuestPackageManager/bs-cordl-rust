@@ -2266,10 +2266,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2295,10 +2295,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_EraseOptions {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2400,10 +2400,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2435,10 +2435,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_InvertedCapture_2<TResult, TCapture
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2638,10 +2638,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2667,10 +2667,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_LoadOptions {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2965,10 +2965,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2994,10 +2994,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorActionType {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -3069,10 +3069,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -3098,10 +3098,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_MultiAnchorDelegatePair {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -3179,10 +3179,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -3208,10 +3208,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_OperationResult {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -3269,10 +3269,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -3298,10 +3298,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_SaveOptions {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -3373,10 +3373,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -3402,10 +3402,10 @@ for crate::GlobalNamespace::OVRSpatialAnchor_UnboundAnchor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }

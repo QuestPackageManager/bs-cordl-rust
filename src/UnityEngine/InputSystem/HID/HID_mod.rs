@@ -401,10 +401,10 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -430,10 +430,10 @@ for crate::UnityEngine::InputSystem::HID::HID_Button {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -562,10 +562,10 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -591,10 +591,10 @@ for crate::UnityEngine::InputSystem::HID::HID_GenericDesktop {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -657,10 +657,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -686,10 +686,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -767,10 +767,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -796,10 +796,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDCollectionType {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -873,10 +873,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -902,10 +902,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -1046,10 +1046,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -1075,10 +1075,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptorBuilder {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -1383,10 +1383,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -1412,10 +1412,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -1987,10 +1987,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2016,10 +2016,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDElementFlags {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2194,10 +2194,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2223,10 +2223,10 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDReportType {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2336,10 +2336,10 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2365,10 +2365,10 @@ for crate::UnityEngine::InputSystem::HID::HID_Simulation {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2451,10 +2451,10 @@ for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2480,10 +2480,10 @@ for crate::UnityEngine::InputSystem::HID::HID_UsagePage {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }

@@ -55,10 +55,10 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -84,10 +84,10 @@ for crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags 
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -151,10 +151,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -180,10 +180,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -831,10 +831,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -860,10 +860,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme_DeviceRequirement {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -1293,10 +1293,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -1322,10 +1322,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme_MatchResult {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -1677,10 +1677,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -1706,10 +1706,10 @@ for crate::UnityEngine::InputSystem::InputControlScheme_SchemeJson {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -1931,10 +1931,10 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -1960,10 +1960,10 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Enumerator {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2208,10 +2208,10 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2237,10 +2237,10 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Match {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2429,10 +2429,10 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2458,10 +2458,10 @@ for crate::UnityEngine::InputSystem::MatchResult_InputControlScheme_Result {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }
@@ -2521,10 +2521,10 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
         actual
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
         self
     }
 }
@@ -2550,10 +2550,10 @@ for crate::UnityEngine::InputSystem::SchemeJson_InputControlScheme_DeviceJson {
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
     }
-    fn into_actual(self) -> Self::Actual {
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
         self
     }
-    fn from_actual(actual: Self::Actual) -> Self {
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
     }
 }

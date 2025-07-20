@@ -70,7 +70,7 @@ impl<
 > std::ops::Deref
 for crate::Zenject::IMemoryPool_6<TParam1, TParam2, TParam3, TParam4, TParam5, TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -84,7 +84,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::Zenject::IMemoryPool_6<TParam1, TParam2, TParam3, TParam4, TParam5, TValue> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

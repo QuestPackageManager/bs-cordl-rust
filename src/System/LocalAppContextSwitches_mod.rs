@@ -37,7 +37,28 @@ impl std::ops::DerefMut for crate::System::LocalAppContextSwitches {
     }
 }
 #[cfg(feature = "System+LocalAppContextSwitches")]
-impl crate::System::LocalAppContextSwitches {}
+impl crate::System::LocalAppContextSwitches {
+    pub fn get_AllowArbitraryTypeInstantiation() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_AllowArbitraryTypeInstantiation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "get_AllowArbitraryTypeInstantiation", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "System+LocalAppContextSwitches")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::LocalAppContextSwitches {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {

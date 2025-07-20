@@ -90,60 +90,6 @@ impl crate::Mono::Math::Prime::PrimalityTests {
         let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SmallPrimeSppTest(
-        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-        confidence: crate::Mono::Math::Prime::ConfidenceFactor,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                Self::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                            crate::Mono::Math::Prime::ConfidenceFactor,
-                        ),
-                        bool,
-                        2usize,
-                    >("SmallPrimeSppTest")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "SmallPrimeSppTest", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            method.invoke_unchecked((), (bi, confidence))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Test(
-        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-        confidence: crate::Mono::Math::Prime::ConfidenceFactor,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                Self::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
-                            crate::Mono::Math::Prime::ConfidenceFactor,
-                        ),
-                        bool,
-                        2usize,
-                    >("Test")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            Self::class(), "Test", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe { method.invoke_unchecked((), (n, confidence))? };
-        Ok(__cordl_ret.into())
-    }
 }
 #[cfg(feature = "Mono+Math+Prime+PrimalityTests")]
 impl quest_hook::libil2cpp::ObjectType for crate::Mono::Math::Prime::PrimalityTests {
